@@ -5,25 +5,25 @@ A Streamlit application showcasing Google's Gemini LLM integration.
 ## Setup
 
 1. Create virtual environment:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
    To deactivate: `deactivate`
 
 2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 3. Configure your API key:
    - Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Edit `.streamlit/secrets.toml` and replace `your_actual_key_from_google_ai_studio` with your actual key
 
 4. Run the app:
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+streamlit run app.py
+```
 
 ## Deploying to Streamlit Cloud
 
@@ -37,3 +37,8 @@ A Streamlit application showcasing Google's Gemini LLM integration.
 
 Never commit your `.streamlit/secrets.toml` file to version control. It's already included in `.gitignore` for your protection.
 
+## Testing
+```bash
+source .venv/bin/activate
+pytest
+```
